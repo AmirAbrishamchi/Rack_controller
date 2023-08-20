@@ -1,0 +1,240 @@
+body, html {
+  height: 100%;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.logo img {
+  width: 50%;
+}
+
+h3{
+  color: black;
+}
+/* Global */
+.container{
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+#reck{
+  color: black;
+}
+
+.fa {
+  color:black;
+}
+
+#hightlight{
+  color: #03A9F4;
+  font-weight: bold;
+}
+/*img {
+  float: left;
+  padding-top: 22px;
+  padding-right: 1px;
+  height: 3.5vh;
+}
+
+
+/* Header*/
+
+header{
+  background: #373B44;
+  color: white;
+  padding-top: 0px;
+  min-height: 50px;
+  border-bottom: #4286f4 5px solid;
+}
+
+header #brand{
+  float: left;
+  margin: 0;
+}
+
+header #brand img{
+  height: 10vh;
+  margin-bottom: 10px;
+}
+
+header .hightlight{
+  color: #03A9F4;
+  font-weight: bold;
+}
+
+
+header a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+nav .fa-home{
+  font-size: 1em;
+  color: #03A9F4;
+}
+
+header ul{
+  padding: 0;
+  margin: 0;
+}
+
+header li{
+  float:left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+
+header a:hover{
+  color: #03A9F4;
+}
+
+header a:hover .fa-home{
+  color: white;
+}
+
+header nav{
+  float: right;
+  margin-top: 30px;
+}
+
+header h1{
+  float: left;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+#showcase{
+  padding-top: 2.5%;
+  overflow: hidden;
+  margin: auto;
+  height: 70%;
+  text-align: center;
+  color: #fff;
+  background-size: 50%;
+  overflow:scroll;
+ 
+  
+  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("https://syte.mobileye.com/KT/QA/Documents/Product_Validation/PV_Lab/server_good.jpg?csf=1&e=PjebBN");  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-size: 100% 100%;
+  background-color: LightGray;
+}
+
+footer{
+  color: #fff;
+  background-color: #373B44;
+  border-top: #4286f4 5px solid;
+  text-align: center;
+  margin: 10 0 10 0;
+}
+footer p {
+  padding-bottom: 1vh;
+}
+section{
+  padding-bottom: 5%;
+}
+
+.reck-grid{
+	
+  width: 80%;
+	display: grid;
+	grid-row-gap: 10px;
+	grid-column-gap: 5%;
+  grid-template-columns: auto auto auto auto;
+	padding: 10px;
+	align: center;
+  margin:auto;
+}
+
+.grid-item	{
+	align: center;
+}
+
+.grid-item .btn1 .fa-server{
+  font-size: 3em;
+}
+
+
+.btn1{
+  border-style: solid;
+  border-width: 1px;
+  border-radius : 10px;
+  color: #37474f;
+  padding: 10px 0 10px 0;
+	width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+	cursor: pointer;
+	margin: 0px;
+  background-color:rgba(244,244,244,0.9);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10), 0 17px 50px 0 rgba(0,0,0,0.10);
+
+}
+.btn1:hover {
+  background-color: #373B44;
+  color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn1:hover h3{
+  color: white;
+}
+
+@media only screen and (max-width: 800px){
+  .grid-item .btn1 .fa-server{
+    padding-top: 3vh;
+    font-size: 1.5em;
+  }
+  .grid-item h3{
+    font-size: 1em;
+  }
+  .grid-item{
+    margin: 0 2px 0 2px;
+    padding: 0 0 0 0;
+  }
+
+  .btn1{
+    padding: 0 0 0 0;
+  }
+  section{
+    padding-bottom: 20%;
+  }
+  #brand h1{
+    font-size: 20px;
+  }
+  .reck-grid{
+    grid-template-columns: auto auto auto auto auto;
+  }
+  header{
+    height: 50px;
+  }
+  header nav{
+    margin-top: 20px;
+  }
+
+  header li a{
+    font-size: 17px;
+  }
+  header{
+  background: #373B44;
+  color: white;
+  padding-top: 0px;
+  min-height: 50px;
+  border-bottom: #4286f4 5px solid;
+}
+  
+}

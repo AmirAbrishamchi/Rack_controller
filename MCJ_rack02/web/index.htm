@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="PV Lab Power Controller">
+  <meta name="keywords" content="PVLAB, Mobileye, Intel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PV_LAB | PVMCJ02</title>
+  <link rel="stylesheet" href="color.css">
+  <link rel="stylesheet" href="style_reck.css">
+  <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body onload="startAJAX()">
+    <header>
+      <div id="pv_MCJ_02">
+        <div class="container">
+          <div id="brand">
+          
+            <h1><span id="pv_MCJ_02_t">PV</span>LAB |    RACK: <span id="pv_MCJ_02_t">PV</span>MCJ02</h1>
+          </div>
+          <nav>
+            <ul>
+              
+              <li><a href="home_page.htm"><i id="pv_MCJ_02_t" class="fa fa-home"></i> Home</a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <i id="pv_MCJ_02_t" class="fa fa-server"></i>  Station
+                    <i id="pv_MCJ_02_t" class="fa fa-caret-down"></i>
+                  </button>
+                  <div id="color_1"class="dropdown-content">
+                    <a href="http://MCJ_RACK_01/index.htm">MCJ_RACK_01</a>
+					<a href="http://MCJ_RACK_02/index.htm">MCJ_RACK_02</a>
+                    <a href="http://MCJ_RACK_03/index.htm">MCJ_RACK_03</a>
+                    <a href="http://MCJ_RACK_04/index.htm">MCJ_RACK_04</a>
+                    <a href="http://MCJ_RACK_05/index.htm">MCJ_RACK_05</a>
+					<a href="http://MCJ_RACK_06/index.htm">MCJ_RACK_06</a>
+					<a href="http://MCJ_RACK_07/index.htm">MCJ_RACK_07</a>
+					<a href="http://MCJ_RACK_08/index.htm">MCJ_RACK_08</a>
+                    <a href="http://MCJ_RACK_09/index.htm">MCJ_RACK_09</a>
+                    <a href="http://MCJ_RACK_10/index.htm">MCJ_RACK_10</a>
+                    <a href="http://MCJ_RACK_11/index.htm">MCJ_RACK_11</a>
+                    <a href="http://MCJ_RACK_12/index.htm">MCJ_RACK_12</a>
+                    <a href="http://MCJ_RACK_13/index.htm">MCJ_RACK_13</a>
+                    <a href="http://MCJ_RACK_14/index.htm">MCJ_RACK_14</a>
+                    <a href="http://MCJ_RACK_15/index.htm">MCJ_RACK_15</a>
+                    <a href="http://MCJ_RACK_16/index.htm">MCJ_RACK_16</a>
+                    <a href="http://MCJ_RACK_17/index.htm">MCJ_RACK_17</a>
+                    <a href="http://MCJ_RACK_18/index.htm">MCJ_RACK_18</a>
+                    <a href="http://MCJ_RACK_19/index.htm">MCJ_RACK_19</a>
+				    <a href="http://MCJ_RACK_20/index.htm">MCJ_RACK_20</a>
+					<a href="http://MCJ_RACK_21/index.htm">MCJ_RACK_21</a>
+                    <a href="http://MCJ_RACK_22/index.htm">MCJ_RACK_22</a>
+                    <a href="http://MCJ_RACK_23/index.htm">MCJ_RACK_23</a>
+                    <a href="http://MCJ_RACK_24/index.htm">MCJ_RACK_24</a>
+					<a href="http://MCJ_RACK_25/index.htm">MCJ_RACK_25</a>
+					<a href="http://MCJ_RACK_26/index.htm">MCJ_RACK_26</a>
+                    <a href="http://MCJ_RACK_27/index.htm">MCJ_RACK_27</a>
+                    <a href="http://MCJ_RACK_28/index.htm">MCJ_RACK_28</a>
+                    <a href="http://MCJ_RACK_29/index.htm">MCJ_RACK_29</a>
+                    <a href="http://MCJ_RACK_30/index.htm">MCJ_RACK_30</a>
+                    <a href="http://MCJ_RACK_31/index.htm">MCJ_RACK_31</a>
+                    <a href="http://MCJ_RACK_32/index.htm">MCJ_RACK_32</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="showcase">
+
+      <div class="reck-grid">
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly1" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0201</h3> 			
+			~System_Rly1Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly2" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0202</h3>
+			~System_Rly2Name~
+          </button>
+        </div>
+
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly3" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_023</h3>
+			~System_Rly3Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly4" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0204</h3>
+			~System_Rly4Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly5" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            
+            <h3>Reboot -- pv_MCJ_0205</h3>
+			~System_Rly5Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly6" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            
+            <h3>Reboot -- pv_MCJ_0206</h3>
+			~System_Rly6Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly7" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+              <h3>Reboot -- pv_MCJ_0207</h3>
+			~System_Rly7Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly8" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0208</h3>
+			~System_Rly8Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly9" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0209</h3>
+			~System_Rly9Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly10" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0210</h3>
+			~System_Rly10Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly11" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0211</h3>
+			~System_Rly11Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly12" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0212</h3>
+			~System_Rly12Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly13" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0213</h3>
+			~System_Rly13Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly14" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0214</h3>
+			~System_Rly14Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly15" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0215</h3>
+			~System_Rly15Name~
+          </button>
+        </div>
+
+        <div class="grid-item">
+          <button class="btn1 color_1" id="Rly16" onclick=approve(id)>
+              <i class="fa fa-desktop"></i>
+            <h3>Reboot -- pv_MCJ_0216</h3>
+			~System_Rly16Name~
+          </button>
+        </div>
+	
+      </div>
+	  
+    </section>
+
+	
+    <footer id="pv_MCJ_02_footer">
+      <p>PV - LAB | &copy; Developed by Amir Abrishamchi Designed by Amir Abrishamchi & Shlomo Gelman | 2021</p>
+    </footer>
+
+	
+    <script type="text/javascript">
+    function approve(id)
+    {
+		name = id;
+		id = id.replace(/\D/g,'');
+    	var first = "dscript.cgi?SystemRlysUpdated= ";
+		var last = id;
+    	var run=first.concat(last);
+    	var r = confirm("Are you sure you want to turn OFF station"+id);
+    	if (r == true)
+    	{
+        newAJAXCommand(run);
+		alert(id +" Was turned OFF,performing safe shut down and restart");
+        
+    	}
+    	else
+		{
+        alert(" No action was taken");
+    	}
+    }
+    </script>
+
+
+    <script type="text/javascript">
+
+    function ajaxUpdate()
+    {
+
+		if (getValue('Rly16')=='1')	
+		{
+		document.getElementById("Rly16").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0216</h3>~System_Rly16Name~';
+        document.getElementById("Rly16").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly16").disabled = true;
+        }
+      
+		else 
+		{
+		document.getElementById("Rly16").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0216</h3>~System_Rly16Name~';
+        document.getElementById("Rly16").disabled = false;
+		document.getElementById("Rly16").classList.replace( 'disabled_btn','btn1');
+			
+		}
+		
+		if (getValue('Rly15')=='1')	
+		{
+		
+		document.getElementById("Rly15").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0215</h3>~System_Rly15Name~';
+        document.getElementById("Rly15").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly15").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly15").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0215</h3>~System_Rly15Name~';
+        document.getElementById("Rly15").disabled = false;
+		document.getElementById("Rly15").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		
+		if (getValue('Rly14')=='1')	
+		{
+		
+		document.getElementById("Rly14").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0214</h3>~System_Rly14Name~';
+        document.getElementById("Rly14").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly14").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly14").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0214</h3>~System_Rly14Name~';
+        document.getElementById("Rly14").disabled = false;
+		document.getElementById("Rly14").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+	
+		if (getValue('Rly13')=='1')	
+		{
+		
+		document.getElementById("Rly13").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0213</h3>~System_Rly13Name~';
+        document.getElementById("Rly13").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly13").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly13").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0213</h3>~System_Rly13Name~';
+        document.getElementById("Rly13").disabled = false;
+		document.getElementById("Rly13").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly12')=='1')	
+		{
+		
+		document.getElementById("Rly12").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0212</h3>~System_Rly12Name~';
+        document.getElementById("Rly12").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly12").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly12").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0212</h3>~System_Rly12Name~';
+        document.getElementById("Rly12").disabled = false;
+		document.getElementById("Rly12").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly11')=='1')	
+		{
+		
+		document.getElementById("Rly11").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0211</h3>~System_Rly11Name~';
+        document.getElementById("Rly11").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly11").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly11").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0211</h3>~System_Rly11Name~';
+        document.getElementById("Rly11").disabled = false;
+		document.getElementById("Rly11").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly10')=='1')	
+		{
+		
+		document.getElementById("Rly10").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0210</h3>~System_Rly10Name~';
+        document.getElementById("Rly10").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly10").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly10").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0210</h3>~System_Rly10Name~';
+        document.getElementById("Rly10").disabled = false;
+		document.getElementById("Rly10").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		
+		if (getValue('Rly9')=='1')	
+		{
+		
+		document.getElementById("Rly9").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0209</h3>~System_Rly9Name~';
+        document.getElementById("Rly9").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly9").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly9").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0209</h3>~System_Rly9Name~';
+        document.getElementById("Rly9").disabled = false;
+		document.getElementById("Rly9").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly8')=='1')	
+		{
+		
+		document.getElementById("Rly8").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0208</h3>~System_Rly8Name~';
+        document.getElementById("Rly8").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly8").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly8").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0208</h3>~System_Rly8Name~';
+        document.getElementById("Rly8").disabled = false;
+		document.getElementById("Rly8").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly7')=='1')	
+		{
+		
+		document.getElementById("Rly7").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0207</h3>~System_Rly7Name~';
+        document.getElementById("Rly7").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly7").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly7").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0207</h3>~System_Rly7Name~';
+        document.getElementById("Rly7").disabled = false;
+		document.getElementById("Rly7").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		
+		if (getValue('Rly6')=='1')	
+		{
+		
+		document.getElementById("Rly6").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0206</h3>~System_Rly6Name~';
+        document.getElementById("Rly6").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly6").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly6").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0206</h3>~System_Rly6Name~';
+        document.getElementById("Rly6").disabled = false;
+		document.getElementById("Rly6").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly5')=='1')	
+		{
+		
+		document.getElementById("Rly5").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0205</h3>~System_Rly5Name~';
+        document.getElementById("Rly5").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly5").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly5").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0205</h3>~System_Rly5Name~';
+        document.getElementById("Rly5").disabled = false;
+		document.getElementById("Rly5").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly4')=='1')	
+		{
+		
+		document.getElementById("Rly4").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0204</h3>~System_Rly4Name~';
+        document.getElementById("Rly4").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly4").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly4").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0204</h3>~System_Rly4Name~';
+        document.getElementById("Rly4").disabled = false;
+		document.getElementById("Rly4").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly3')=='1')	
+		{
+		
+		document.getElementById("Rly3").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0203</h3>~System_Rly3Name~';
+        document.getElementById("Rly3").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly3").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly3").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0203</h3>~System_Rly3Name~';
+        document.getElementById("Rly3").disabled = false;
+		document.getElementById("Rly3").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly2')=='1')	
+		{
+		
+		document.getElementById("Rly2").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0702</h3>~System_Rly2Name~';
+        document.getElementById("Rly2").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly2").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly2").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0202</h3>~System_Rly2Name~';
+        document.getElementById("Rly2").disabled = false;
+		document.getElementById("Rly2").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+		if (getValue('Rly1')=='1')	
+		{
+		
+		document.getElementById("Rly1").innerHTML = '<i class="fa fa-cog fa-spin"></i><h3>Reseting pv_MCJ_0201</h3>~System_Rly1Name~';
+        document.getElementById("Rly1").classList.replace('btn1', 'disabled_btn');
+        document.getElementById("Rly1").disabled = true;
+        
+        }
+      
+		else
+		{
+		document.getElementById("Rly1").innerHTML = '<i class="fa fa-desktop"></i><h3>Reboot -- pv_MCJ_0201</h3>~System_Rly1Name~';
+        document.getElementById("Rly1").disabled = false;
+		document.getElementById("Rly1").classList.replace( 'disabled_btn','btn1');
+					
+		}
+		
+    }
+
+
+
+    </script>
+
+</body>
+</html>
